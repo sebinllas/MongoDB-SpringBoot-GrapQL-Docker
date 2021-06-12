@@ -19,15 +19,22 @@ repositories {
 }
 
 dependencies {
+
     implementation("io.micrometer:micrometer-registry-prometheus:1.7.0")
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+    implementation group: 'com.graphql-java-kickstart', name: 'graphql-spring-boot-starter', version: '11.1.0'
+    implementation group: 'com.graphql-java', name: 'graphql-java-tools', version: '5.2.4'
+
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+
     compileOnly 'org.projectlombok:lombok'
+
     annotationProcessor 'org.projectlombok:lombok'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
