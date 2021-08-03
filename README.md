@@ -34,3 +34,9 @@ $ java -jar build/libs/spring-boot-mongodb-base-project-0.0.1-SNAPSHOT.jar
 ### Related Articles
 
 [Docker Compose For Spring Boot with MongoDB](https://javatodev.com/docker-compose-for-spring-boot-with-mongodb/)
+
+To configure Grafana use:
+User and password: admin
+Configure DataSource as Prometheus: http://prometheus-service:9090
+DashBoard ID for Java (micrometer): 4701
+DashBoard ID for MongoDB: 2583

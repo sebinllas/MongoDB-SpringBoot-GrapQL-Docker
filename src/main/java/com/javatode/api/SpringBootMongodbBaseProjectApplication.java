@@ -9,5 +9,4 @@ public class SpringBootMongodbBaseProjectApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringBootMongodbBaseProjectApplication.class, args);
     }
-
 }
