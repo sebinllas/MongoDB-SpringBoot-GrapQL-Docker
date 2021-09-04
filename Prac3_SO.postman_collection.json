@@ -220,6 +220,33 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "findTutorial",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{\n    findTutorial(id: \"61333761cf2e920964c38be9\"){\n        title\n        description\n        author{\n            id\n            name\n        }\n    }\n\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/apis/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"apis",
+						"graphql"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

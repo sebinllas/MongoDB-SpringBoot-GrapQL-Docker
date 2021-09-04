@@ -11,6 +11,8 @@ import com.javatode.api.services.TutorialService;
 
 import graphql.kickstart.tools.GraphQLQueryResolver;
 
+import java.util.Optional;
+
 @Service
 @CrossOrigin
 public class QueryResolver implements GraphQLQueryResolver {
@@ -30,6 +32,8 @@ public class QueryResolver implements GraphQLQueryResolver {
     public int countAuthors() {
         return authorService.countAuthors();
     }
+
+    public Optional<Tutorial> findTutorial(String id){ return tutorialService.findTutorial(id);  }
     
     public Iterable<Tutorial> findAllTutorials() {
         return tutorialService.findAllTutorials();

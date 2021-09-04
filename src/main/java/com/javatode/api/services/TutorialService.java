@@ -13,6 +13,8 @@ public class TutorialService {
 	
 	@Autowired
 	private TutorialRepository tutorialRepository;
+
+    public Optional<Tutorial> findTutorial(String id){ return tutorialRepository.findById(id);}
 	
     public Iterable<Tutorial> findAllTutorials() {
         return tutorialRepository.findAll();
@@ -55,5 +57,5 @@ public class TutorialService {
         tutorialRepository.deleteById(id);
         return true;
     }
-    
+
 }
