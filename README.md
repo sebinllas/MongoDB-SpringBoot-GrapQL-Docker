@@ -1,6 +1,6 @@
 # Spring Boot MongoDB and GrapQL Base Project
 
-This application was developed to demonstrate Spring Boot with MongoDB with simple CRUD API using GrapQL. Additionally we offer a monitoring infraestructure using prometheus and Graphana. All the application is deployed using docker (and docker-compose)
+This application was developed to demonstrate Spring Boot with MongoDB with simple CRUD API using GrapQL. Additionally we offer a monitoring infraestructure using prometheus and Graphana. All the application is deployed using docker (and docker-compose). I also offer a basic Jmeter script to show you how to load your applications to monitoring in Graphana.
 
 Technologies Used
 
